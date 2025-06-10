@@ -1,0 +1,144 @@
+/* Reset navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #B0E0E6, #E0FFFF, #F0FFFF);
+    color: #333;
+}
+
+h1 {
+    color: #004466;
+    text-shadow: 1px 1px 4px #aaa;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+textarea,
+input[type=file],
+input[type=text],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    color: #003355;
+}
+
+button {
+    background-color: #00a389;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #007f6e;
+}
+
+.msg {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #006633;
+}
+
+.warning {
+    color: #cc3300;
+}
+
+.info {
+    color: #555;
+}
+
+.qr-code {
+    margin-top: 20px;
+}
+
+.footer {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 40px;
+}
+
+a {
+    color: #007f6e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Conteúdo ocupa espaço necessário */
+.content {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Rodapé separado e ajustado */
+.footer {
+    font-size: 0.6rem;
+    color: #666;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Container geral: altura total da tela e flex vertical */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

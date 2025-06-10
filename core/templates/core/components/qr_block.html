@@ -1,0 +1,24 @@
+<!-- core/templates/core/components/qr_block.html -->
+<h1>🔳 Gerador de QR Code Único com a Lista</h1>
+<p>Cole seriais ou endereços abaixo <strong>e/ou</strong> envie um Excel. Será gerado <strong>um único QR Code</strong>.</p>
+
+{% if msg %}
+    <p class="msg {% if '⚠️' in msg or '❌' in msg %}warning{% elif 'ℹ️' in msg %}info{% endif %}">{{ msg }}</p>
+{% endif %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">🚀 Gerar QR Code Único</button>
+</form>
+
+{% if img_data %}
+<div class="qr-code">
+    <img src="{{ img_data }}" alt="QR Code Gerado" width="220" height="220" />
+    <p><a href="{{ img_data }}" download="qrcode_unico.png">📥 Baixar QR Code</a></p>
+</div>
+{% endif %}
+
+<div class="footer">
+    Desenvolvido por <strong>BEROMEIRO</strong> com ❤️ usando Django e Python.
+</div>
