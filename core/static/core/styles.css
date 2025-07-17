@@ -79,7 +79,17 @@ button:hover {
 }
 
 .qr-code {
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer {

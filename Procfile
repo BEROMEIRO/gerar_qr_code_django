@@ -1,0 +1,1 @@
+web: gunicorn gerar_qr_code.wsgi
