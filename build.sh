@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
-# Coleta arquivos estáticos para produção
+# Instala as dependências
+pip install -r requirements.txt
+
+# Coleta os arquivos estáticos
 python manage.py collectstatic --noinput
